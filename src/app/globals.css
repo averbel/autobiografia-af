@@ -288,7 +288,7 @@ p {
 .hero-role {
   margin-top: 1.2rem;
   font-size: 1.1rem;
-  color: var(--paper-dim);
+  color: #000;
   max-width: 34rem;
   animation: rise 0.7s ease-out 0.16s both;
 }
