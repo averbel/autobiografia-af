@@ -197,7 +197,10 @@ p {
   position: relative;
   padding: 4.5rem 0 5rem;
   overflow: hidden;
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: 
+    linear-gradient(to bottom, rgba(6, 10, 19, 0.85) 0%, rgba(6, 10, 19, 0.3) 50%, rgba(6, 10, 19, 1) 100%),
+    url('/hero-bg.jpg') center/cover no-repeat;
 }
 
 .circuit-bg {
