@@ -1,6 +1,8 @@
 import CircuitBackground from "./CircuitBackground";
 import AvatarRing from "./AvatarRing";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function Home() {
   return (
     <>
@@ -25,7 +27,15 @@ export default function Home() {
       </nav>
 
       {/* QUIÉN SOY */}
-      <header className="hero">
+      <header
+        className="hero"
+        style={{
+          backgroundImage: `linear-gradient(to bottom, rgba(6, 10, 19, 0.85) 0%, rgba(6, 10, 19, 0.3) 50%, rgba(6, 10, 19, 1) 100%), url(${basePath}/hero-bg.jpg)`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <CircuitBackground />
         <div className="wrap hero-grid">
           <AvatarRing />
